@@ -11,5 +11,5 @@ cd assets/css/; npx lightningcss --bundle -m --nesting global.css -o ../../publi
 echo 'copying fonts...'
 cp assets/fonts/* public/fonts/
 
-# /usr/local/go/bin/go build -o ./tmp/main .
+docker compose up goweb-dev
 
