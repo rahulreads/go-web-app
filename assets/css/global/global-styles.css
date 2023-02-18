@@ -1,0 +1,110 @@
+/* 
+  Global styles 
+
+  Low-specificity, global styles that apply to the whole project: https://cube.fyi/css.html
+*/
+
+html {
+  block-size: 100%;
+  background-color: var(--color1);
+  color: var(--color8);
+}
+
+body {
+  font-size: var(--step-1);
+  font-family: var(--font-base);
+  /* or set to system defaults */
+  /* font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif; */
+  line-height: 1.4;
+  letter-spacing: var(--tracking);
+}
+
+/* Base typesetting */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  letter-spacing: var(--tracking-s);
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+
+h2 {
+  font-size: var(--step-4);
+}
+
+h3 {
+  font-size: var(--step-3);
+}
+
+/* Set line lengths */
+p,
+li,
+blockquote:not([class]) {
+  max-width: 50ch;
+}
+
+h1,
+h2,
+h3 {
+  max-width: 20ch;
+}
+
+/* More generic elements */
+blockquote:not([class]) {
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+}
+
+/* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
+blockquote:not([class]) p:last-of-type {
+  font-family: var(--font-base);
+  font-size: var(--step-1);
+  font-weight: normal;
+}
+
+svg {
+  height: 2ex;
+  width: auto;
+  flex: none;
+}
+
+[role='list'] {
+  padding: 0;
+}
+
+/* Base interactive elements */
+
+a {
+  color: currentcolor;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:target {
+  scroll-margin-top: 2ex;
+}
+
+main:focus {
+  outline: none;
+}
+
+pre {
+  font-family: var(--font-monospace);
+  font-size: var(--step-1);
+  tab-size: 4;
+  background-color: var(--color2);
+  padding-top: var(--space-s-m);
+  overflow-x: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: var(--font-monospace);
+}

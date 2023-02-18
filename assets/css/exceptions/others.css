@@ -1,0 +1,72 @@
+.mt-l-xl {
+  margin-top: clamp(2rem, 1.46rem + 2.72vw, 3.75rem);
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.grid {
+  display: grid;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.flow-space-s-m {
+  --flow-space: clamp(1rem, 0.73rem + 1.36vw, 1.875rem);
+}
+
+.flow-space-2xl-3xl {
+  --flow-space: clamp(4rem, 2.91rem + 5.44vw, 7.5rem);
+}
+
+.spot-color-primary {
+  --spot-color: var(--brand-primary1);
+}
+
+.spot-color-secondary {
+  --spot-color: var(--brand-primary3);
+}
+
+.summary {
+  --region-space: --space-m-l;
+}
+
+.summary {
+  --flow-space: clamp(1rem, 0.73rem + 1.36vw, 1.875rem);
+}
+
+.menu-main {
+  padding-top: 1rem;
+  gap: 20px;
+  display: flex;
+}
+
+.dot {
+  color: hsl(5deg 100% 50%);
+}
+
+.site-foot {
+  background: var(--color-dark);
+  padding: var(--space-s-m);
+}
+
+.site-foot__inner{
+  align-items: center;
+  display: flex;
+  gap: var(--space-xs-s);
+}
+
+.site-foot img {
+  height: var(--space-m-l);
+  width: var(--space-m-l);
+  filter: invert(var(--svg-image-filter-contrast));
+}

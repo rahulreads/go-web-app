@@ -1,0 +1,77 @@
+.prose {
+  --flow-space: var(--space-m-l);
+  /* --wrapper-max-width: 55ch; */
+}
+
+.prose :is(h2, h3, h4) + * {
+  --flow-space: var(--space-s-m);
+}
+
+.prose blockquote {
+  border-inline-start: 10px solid var(--color-secondary);
+  padding: var(--space-m-l);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--step-2);
+}
+
+.prose blockquote > * + * {
+  margin-top: var(--space-m-l);
+}
+
+.prose blockquote :last-child {
+  font-family: var(--font-base);
+  font-style: normal;
+  font-size: var(--step-1);
+}
+
+.prose > code {
+  color: var(--color7);
+}
+
+.prose > p > code {
+  color: var(--color6);
+}
+
+.prose img {
+  width: 100%;
+  max-height: 40ch;
+  /* aspect-ratio: var(--ratio-landscape); */
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.prose figure {
+  max-width: 50ch;
+}
+
+.prose figure:has(figcaption) {
+  background: var(--color8);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.prose .figure {
+  background: var(--color8);
+  padding: 2rem;
+  max-width: 50ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.prose figure figcaption {
+  color: var(--color1);
+}
+
+.prose .highlight {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px;
+}
