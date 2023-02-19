@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: ./compose/prod/Dockerfile
-    image: europe-west4-docker.pkg.dev/next-js-361720/goweb/goweb-prod:latest
+    image: goweb-prod:latest
     container_name: goweb-prod
     ports:
       - 8000:8000
