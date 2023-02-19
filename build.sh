@@ -11,5 +11,6 @@ cd assets/css/; npx lightningcss --bundle -m --nesting global.css -o ../../publi
 echo 'copying fonts...'
 cp assets/fonts/* public/fonts/
 
+# build docker image with air
 docker compose up goweb-dev
 
